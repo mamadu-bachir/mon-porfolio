@@ -1,125 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma Page Web</title>
-</head>
-<body>
-    <h1> Mamadou Faye </h1>
-    <!-- les barres de navigation -->
-     <!--les a c'est pour les liens-->
-    <nav>   
-        <!-- les items  -->
-        <ul>
-        <li><a href="#Mamadou">Accueil</a></li>
-        <li><a href="#Àpropos">À propos</a></li>
-        <li><a href="#CV">CV</a></li>
-        <li><a href="#Project">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <!-- implémentation de la barre acceuil -->
-    <section id="Mamadou">
-        <p> Bonjour moi c'est Mamadou actuellement étudiant à GoMyCode en developpement web</p>
+  <!DOCTYPE html>
+  <html lang="fr">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Mon Portfolio</title>
+      
+      <!-- Lier le CSS -->
+      <link rel="stylesheet" href="styles.css">
+     
+     <!-- Police Roboto -->
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+ </head>
+ <body>
+     <nav class="navbar">
+        <div class="logo">Mamadou Faye</div>
+         <ul class="menu">
+             <li><a href="#about">À propos</a></li>
+             <li><a href="#work">Travail</a></li>
+             <li><a href="#cv">CV</a></li>
+             <li><a href="#contact">Contact</a></li>
+         </ul>
+     </nav>
 
-    </section>
+     <div class="container">
+         <h1 class="titre">Bienvenue sur mon Portfolio</h1>
+         
+         <section id="about" class="section">
+            <div class="container">
+             <h2>À propos de moi</h2>
+             <div class="about-content">
+             <img src="images/champs-mais.svg" alt="Champs de maïs" class="profile-pic">
+             <p>Salut ! Moi c'est Mamadou 👋 <br><br>
+                        Je suis en train d'apprendre le développement web et j'adore ça. 
+                         Je suis quelqu'un de déterminé : quand je bloque sur un problème de code, je cherche, je teste,
+                         et je ne lâche pas tant que ça marche. 
+                         Mon but : créer des sites propres, utiles, et qui ont du style. Mise à part ça, je suis un grand passionné d'informatique, de cuisine et d’agronomie 
+                         <br> Bienvenue sur mon portfolio !</p>
+      </div>
+          </div>
+         </section>
 
-    <section id="Àpropos">
-        <p>je suis passioné d`agronomie</p>
-        <!---video youtube integrer-->
-        <video src="https://youtu.be/5AnTjEruhAE?si=GhmCVkDI2QLyfD7n" controls></video>
-    </section>
+         <section id="work" class="section">
+             <h2>Mon Travail</h2>
+             <video controls class="video">
+                 <source src="ma-video.mp4" type="video/mp4">
+             </video>
+         </section>
 
-    <section id="CV">
-        <h3>Voici la liste de mes compétences</h3>
-        <ol>
-            <li>Je maitrise HTML</li>
-            <li>Je maitrise CSS</li>
-            <li>Je maitrise PYTHON</li>
-            <li>Je maitrise WORD et EXCEL</li>
-        </ol>
-    </section>
-    <section id="Project">
-        <table>
-            <tr>
-                <th> Prenom</th>
-                <th>Nom</th>
-                <th>Age (ans)</th>
-            </tr>
+         <section id="cv" class="section">
+             <h2>Mon CV</h2>
+             <a href="cv.pdf" class="btn" download>Télécharger mon CV</a>
+         </section>
 
-            <tr>
-                <td>Fatou</td>
-                <td>Ngom</td>
-                <td>22</td>
-            </tr>
+         <section id="contact" class="section">
+             <h2>Contact</h2>
+             <form class="form-contact">
+                 <!-- ton formulaire ici -->
+                 <input type="text" placeholder="Votre nom">
+                 <input type="email" placeholder="Votre email">
+                 <button type="submit">Envoyer</button>
+           </form>
+        </section>
+     </div>
 
-            <tr>
-                <td>Wassim</td>
-                <td>Keita</td>
-                <td>15</td>
-            </tr>
-
-            <tr>
-                <td>Ibrahima</td>
-                <td>Diallo</td>
-                <td>25</td>
-            </tr>
-            
-            <tr>
-                <td>Abdoul karim</td>
-                <td>Sy</td>
-                <td>20</td>
-            </tr>
-
-            <tr>
-                <td>Mouhamed</td>
-                <td>Thiam</td>
-                <td>19</td>
-            </tr>
-
-            <tr>
-                <td>ALY</td>
-                <td>SY</td>
-                <td>20</td>
-            </tr>
-            
-            <tr>
-           <td>DJIBO</td>   
-           <td>KA</td>
-           <td>20</td>
-        </tr>
-
-        <tr>
-            <td>Carlos</td>
-            <td>Da Silva</td>
-            <td>21</td>
-        </table>
-    </section> 
-    <section id="contact">
-        <form> 
-            <label for="">
-                prénom & nom 
-            </label>
-            <input type="text" name="" id="">
-
-            <label for="">
-                Email
-            </label>
-            <input type="text" name="" id="">
-
-            <label for=""></label>
-            Contact
-            <input type="text" name="" id="">
-
-            <button> Send</button>
-        </form>
-    </section>
-    <br></br>
-    <footer> & GOMYCODE BY LA CLASSE</footer>
-    <p>fayemamadou331@gmail.com</p>
-    <p>
-        <a href="https://www.linkedin.com"trajet= "blank">linkedin</a>
-    </p>
-</body>
-</html
+     <footer>
+         <p>© 2026 Mamadou Faye — Portfolio</p>
+     </footer>
+ </body>
+ </html>
